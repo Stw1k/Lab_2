@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Students>
+	<Student>
+		<FullName>Максим Головін</FullName>
+		<Faculty>ФІТ</Faculty>
+		<Group>Ф-24</Group>
+		<Speciality>Кібербезпека</Speciality>
+		<Marks>
+			Теорія Ймовірності 83,
+			Диференціальні рівняння 90,
+			Англійська мова 79,
+			Математична логіка 84,
+			ООП 96,
+			Дискретна математика 88,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Олександр Головін</FullName>
+		<Faculty>ФІТ</Faculty>
+		<Group>Ф-24</Group>
+		<Speciality>Кібербезпека</Speciality>
+		<Marks>
+			Теорія Ймовірності 81,
+			Диференціальні рівняння 85,
+			Англійська мова 83,
+			Математична логіка 86,
+			ООП 87,
+			Дискретна математика 81,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Ярослав Шинкоренко</FullName>
+		<Faculty>ФІТ</Faculty>
+		<Group>Ф-26</Group>
+		<Speciality>Інженерія програмного забезпечення</Speciality>
+		<Marks>
+			Теорія Ймовірності 68,
+			Диференціальні рівняння 73,
+			Англійська мова 69,
+			Математична логіка 78,
+			ООП 81,
+			Дискретна математика 76,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Ростислав Гурильов</FullName>
+		<Faculty>ФІТ</Faculty>
+		<Group>Ф-26</Group>
+		<Speciality>Кібербезпека</Speciality>
+		<Marks>
+			Теорія Ймовірності 87,
+			Диференціальні рівняння 86,
+			Англійська мова 83,
+			Математична логіка 82,
+			ООП 89,
+			Дискретна математика 82,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Данііл Скірда</FullName>
+		<Faculty>ФІТ</Faculty>
+		<Group>Ф-25</Group>
+		<Speciality>Комп'ютерні науки</Speciality>
+		<Marks>
+			Теорія Ймовірності 77,
+			Диференціальні рівняння 78,
+			Англійська мова 83,
+			Математична логіка 72,
+			ООП 87,
+			Дискретна математика 76,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Дмитро Гаврілін</FullName>
+		<Faculty>Факультет психології</Faculty>
+		<Group>П-26</Group>
+		<Speciality>Освітні, педагогічні науки</Speciality>
+		<Marks>
+			Соціальна психологія 76,
+			Диференціальна психологія 79,
+			Експереминтальна психологія 75,
+			Етнокультурна психологія 70,
+			Загальна психологія 83,
+			Іноземна мова 68,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Ігор Жданюк</FullName>
+		<Faculty>Факультет психології</Faculty>
+		<Group>П-25</Group>
+		<Speciality>Психологія</Speciality>
+		<Marks>
+			Соціальна психологія 80,
+			Диференціальна психологія 77,
+			Експереминтальна психологія 79,
+			Етнокультурна психологія 83,
+			Загальна психологія 86,
+			Іноземна мова 73,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Владислав Макушенко</FullName>
+		<Faculty>ФКНК</Faculty>
+		<Group>К-26</Group>
+		<Speciality>Комп'ютерні науки</Speciality>
+		<Marks>
+			Теорія Ймовірності 63,
+			Диференціальні рівняння 68,
+			Англійська мова 78,
+			Математична логіка 70,
+			ООП 88,
+			Дискретна математика 73,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Лев Прошкін</FullName>
+		<Faculty>ФІТ</Faculty>
+		<Group>Ф-27</Group>
+		<Speciality>Кібербезпека</Speciality>
+		<Marks>
+			Теорія Ймовірності 83,
+			Диференціальні рівняння 87,
+			Англійська мова 86,
+			Математична логіка 79,
+			ООП 90,
+			Дискретна математика 85,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Максим Овдієнко</FullName>
+		<Faculty>ФКНК</Faculty>
+		<Group>К-25</Group>
+		<Speciality>Комп'ютерні науки</Speciality>
+		<Marks>
+			Теорія Ймовірності 60,
+			Диференціальні рівняння 63,
+			Англійська мова 67,
+			Математична логіка 62,
+			ООП 78,
+			Дискретна математика 69,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Олена Волченко</FullName>
+		<Faculty>ФКНК</Faculty>
+		<Group>К-26</Group>
+		<Speciality>Комп'ютерні науки</Speciality>
+		<Marks>
+			Теорія Ймовірності 95,
+			Диференціальні рівняння 96,
+			Англійська мова 90,
+			Математична логіка 87,
+			ООП 97,
+			Дискретна математика 92,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Олексій Антіпін</FullName>
+		<Faculty>ФКНК</Faculty>
+		<Group>К-27</Group>
+		<Speciality>Комп'ютерні науки</Speciality>
+		<Marks>
+			Теорія Ймовірності 69,
+			Диференціальні рівняння 73,
+			Англійська мова 63,
+			Математична логіка 60,
+			ООП 78,
+			Дискретна математика 75,
+		</Marks>
+	</Student>
+	<Student>
+		<FullName>Андрій Бугаєць</FullName>
+		<Faculty>ФКНК</Faculty>
+		<Group>К-25</Group>
+		<Speciality>Комп'ютерні науки</Speciality>
+		<Marks>
+			Теорія Ймовірності 84,
+			Диференціальні рівняння 92,
+			Англійська мова 86,
+			Математична логіка 83,
+			ООП 96,
+			Дискретна математика 87,
+		</Marks>
+	</Student>
+</Students>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <FullName>Владислав Макушенко</FullName>
+    <Faculty>ФКНК</Faculty>
+    <Group>К-26</Group>
+    <Speciality>Комп'ютерні науки</Speciality>
+    <Marks>
+			Теорія Ймовірності 63,
+			Диференціальні рівняння 68,
+			Англійська мова 78,
+			Математична логіка 70,
+			ООП 88,
+			Дискретна математика 73,
+		</Marks>
+  </Student>
+  <Student>
+    <FullName>Максим Овдієнко</FullName>
+    <Faculty>ФКНК</Faculty>
+    <Group>К-25</Group>
+    <Speciality>Комп'ютерні науки</Speciality>
+    <Marks>
+			Теорія Ймовірності 60,
+			Диференціальні рівняння 63,
+			Англійська мова 67,
+			Математична логіка 62,
+			ООП 78,
+			Дискретна математика 69,
+		</Marks>
+  </Student>
+  <Student>
+    <FullName>Олена Волченко</FullName>
+    <Faculty>ФКНК</Faculty>
+    <Group>К-26</Group>
+    <Speciality>Комп'ютерні науки</Speciality>
+    <Marks>
+			Теорія Ймовірності 95,
+			Диференціальні рівняння 96,
+			Англійська мова 90,
+			Математична логіка 87,
+			ООП 97,
+			Дискретна математика 92,
+		</Marks>
+  </Student>
+  <Student>
+    <FullName>Олексій Антіпін</FullName>
+    <Faculty>ФКНК</Faculty>
+    <Group>К-27</Group>
+    <Speciality>Комп'ютерні науки</Speciality>
+    <Marks>
+			Теорія Ймовірності 69,
+			Диференціальні рівняння 73,
+			Англійська мова 63,
+			Математична логіка 60,
+			ООП 78,
+			Дискретна математика 75,
+		</Marks>
+  </Student>
+  <Student>
+    <FullName>Андрій Бугаєць</FullName>
+    <Faculty>ФКНК</Faculty>
+    <Group>К-25</Group>
+    <Speciality>Комп'ютерні науки</Speciality>
+    <Marks>
+			Теорія Ймовірності 84,
+			Диференціальні рівняння 92,
+			Англійська мова 86,
+			Математична логіка 83,
+			ООП 96,
+			Дискретна математика 87,
+		</Marks>
+  </Student>
+</ArrayOfStudent>

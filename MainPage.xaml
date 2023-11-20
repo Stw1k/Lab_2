@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab_2.MainPage">
+    <ScrollView>
+        <StackLayout Padding="10, 20, 10, 20" HorizontalOptions="FillAndExpand" VerticalOptions="Start" >
+            <FlexLayout Direction="Row" HorizontalOptions="Start" JustifyContent="Start" AlignItems="Center" Padding="10, 20, 10, 20" >
+                <Button 
+                    Text="Обрати файл"
+                    Clicked="OnPickFileClicked"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    Margin="0, 0, 10, 0" 
+                    HorizontalOptions="StartAndExpand"
+                    FlexLayout.AlignSelf="Start"
+                    MaximumHeightRequest="50" 
+                    BorderColor="ForestGreen" />
+                <Button 
+                    Text="Що робити?"
+                    Clicked="OnHelpBtnClicked"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    HorizontalOptions="StartAndExpand"
+                    FlexLayout.AlignSelf="Start"
+                    MaximumHeightRequest="50" 
+                    BorderColor="ForestGreen" />
+            </FlexLayout>
+            <StackLayout x:Name="filters" IsVisible="false" Margin="0,50,0,0">
+                <Grid 
+                    RowSpacing="40"
+                    ColumnSpacing="30">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout
+                        WidthRequest="200"
+                        Grid.Row="0" 
+                        Grid.Column="0">
+                    </StackLayout>
+                    <Picker 
+                        x:Name="fullnamePicker" 
+                        Title="Ім'я" FontSize="12" 
+                        Grid.Row="0" 
+                        Grid.Column="0"
+                        BackgroundColor="LightBlue"
+                        FontAttributes="Bold"
+                        WidthRequest="200"
+                        HeightRequest="65"/>
+                    <Picker 
+                        x:Name="facultyPicker" 
+                        Title="Факультет" 
+                        FontSize="12" 
+                        Grid.Row="0" 
+                        BackgroundColor="LightBlue"
+                        FontAttributes="Bold"
+                        Grid.Column="1" 
+                        WidthRequest="200"
+                        HeightRequest="65"/>
+                    <Picker 
+                        x:Name="groupPicker" 
+                        Title="Група" 
+                        FontSize="12" 
+                        Grid.Row="0" 
+                        BackgroundColor="LightBlue"
+                        FontAttributes="Bold"
+                        Grid.Column="2" 
+                        WidthRequest="200"
+                        HeightRequest="65"/>
+                    <Picker 
+                        x:Name="specialityPicker" 
+                        Title="Спеціальність"
+                        FontSize="12" 
+                        Grid.Row="0" 
+                        BackgroundColor="LightBlue"
+                        FontAttributes="Bold"
+                        Grid.Column="3" 
+                        WidthRequest="200"
+                        HeightRequest="65"/>
+                </Grid>
+                <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="Center" Margin="0,0,0,30">
+                    <RadioButton x:Name="DOMOPt" Content="DOM" GroupName="Options" IsChecked="True" TextColor="White" Margin="0, 0, 10, 0" />
+                    <RadioButton x:Name="SAXOpt" Content="SAX" GroupName="Options" Margin="0, 0, 10, 0" />
+                    <RadioButton x:Name="LINQOpt" Content="LINQ" GroupName="Options" Margin="0, 0, 10, 0" />
+                </FlexLayout>
+                <FlexLayout  Direction="Row" HorizontalOptions="Center" JustifyContent="Start" AlignItems="Center" Padding="10, 20, 10, 20" >
+                    <Button 
+                        Text="Пошук"
+                        Clicked="OnSearchBtnClicked"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="13"
+                        Margin="0, 0, 10, 0" 
+                        HorizontalOptions="StartAndExpand"
+                        FlexLayout.AlignSelf="Start"
+                        MaximumHeightRequest="50" 
+                        BorderColor="White" />
+                    <Button 
+                        Text="Трансформувати в HTML"
+                        Clicked="OnTransformBtnClicked"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="13"
+                        Margin="0, 0, 10, 0" 
+                        HorizontalOptions="StartAndExpand"
+                        FlexLayout.AlignSelf="Start"
+                        MaximumHeightRequest="50" 
+                        BorderColor="White" />
+                    <Button 
+                        Text="Очистити"
+                        Clicked="OnCleanBtnClicked"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="13"
+                        HorizontalOptions="StartAndExpand"
+                        FlexLayout.AlignSelf="Start"
+                        MaximumHeightRequest="50" 
+                        BorderColor="White" />
+                </FlexLayout>
+            </StackLayout>
+            <Label 
+                x:Name="notFoundLabel" 
+                Text="Нічого не знайдено за заданими фільтрами :(" 
+                FontSize="20" 
+                HorizontalTextAlignment="Center"
+                Margin="0, 30, 0, 0" 
+                IsVisible="false"/>
+            <StackLayout x:Name="ResultsContainer" Margin="0, 30, 0, 0" IsVisible="false">
+                <ListView x:Name="ResultsListView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame BorderColor="Green" Margin="0, 10, 0, 0">
+                                    <StackLayout>
+                                        <FlexLayout Direction="Row" >
+                                            <Label HorizontalOptions="Center" Text="Ім'я: " FontAttributes="Bold" Margin="0, 0, 2, 0" />
+                                            <Label HorizontalOptions="Center" Text="{Binding FullName}"/>
+                                        </FlexLayout>
+                                        <FlexLayout Direction="Row" Margin="0, 3, 0, 0">
+                                            <Label HorizontalOptions="Center" Text="Факультет: " FontAttributes="Bold" Margin="0, 0, 2, 0"/>
+                                            <Label HorizontalOptions="Center" Text="{Binding Faculty}" />
+                                        </FlexLayout>
+                                        <FlexLayout Direction="Row" Margin="0, 3, 0, 0">
+                                            <Label HorizontalOptions="Center" Text="Група: " FontAttributes="Bold" Margin="0, 0, 2, 0"/>
+                                            <Label HorizontalOptions="Center" Text="{Binding Group}" />
+                                        </FlexLayout>
+                                        <FlexLayout Direction="Row" Margin="0, 3, 0, 0">
+                                            <Label HorizontalOptions="Center" Text="Спеціальність: " FontAttributes="Bold" Margin="0, 0, 2, 0"/>
+                                            <Label HorizontalOptions="Center" Text="{Binding Speciality}" />
+                                        </FlexLayout>
+                                        <FlexLayout Direction="Row" Margin="0, 3, 0, 0">
+                                            <Label HorizontalOptions="Center" Text="Оцінки: " FontAttributes="Bold" Margin="0, 0, 2, 0"/>
+                                            <Label HorizontalOptions="Center" Text="{Binding Marks}" />
+                                        </FlexLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
